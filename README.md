@@ -184,7 +184,7 @@ public function actions()
                 'class' => TargetSettingAction::class,
                 'modelClass' => 'app\models\SiteForm',
                 //'scenario' => 'site',	// Change if you want to re-use the model for multiple setting form.
-                //'targetType' => 'company', // By default use 'user'
+                //'targetType' => 'company', // By default use ''
                 //'targetId' => 1, // By default use \Yii::$app->user->id
                 'viewName' => 'site-settings',	// The form we need to render
                 'successMessage' => '保存成功'

@@ -29,9 +29,9 @@ class TargetSettingAction extends Action
     public $viewName = 'target-setting';
 
     /**
-     * @var string target id. Default is user
+     * @var string target type.
      */
-    public $targetType = 'user';
+    public $targetType = '';
 
     /**
      * @var int target id. Default Yii::$app->user->id
