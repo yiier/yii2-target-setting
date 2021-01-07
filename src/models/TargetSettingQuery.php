@@ -29,6 +29,6 @@ class TargetSettingQuery extends ActiveQuery
      */
     public function inactive()
     {
-        return $this->andWhere(['status' => TargetSettingModel::STATUS_ACTIVE]);
+        return $this->andWhere(['status' => TargetSettingModel::STATUS_INACTIVE]);
     }
 }
