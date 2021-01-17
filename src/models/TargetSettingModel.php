@@ -179,7 +179,7 @@ class TargetSettingModel extends \yii\db\ActiveRecord
     public function removeSetting($key, $targetType = '', $targetId = 0)
     {
         $conditions = ['target_type' => $targetType, 'target_id' => $targetId, 'key' => $key];
-        if (!$model = static::find()->where($conditions)->limit(1)->one()) {
+        if ($model = static::find()->where($conditions)->limit(1)->one()) {
             return $model->delete();
         }
         return false;
